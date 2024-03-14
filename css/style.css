@@ -5,6 +5,7 @@
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
     transition: 0.5s;
+    border-radius: 10px;
 }
 
 body{

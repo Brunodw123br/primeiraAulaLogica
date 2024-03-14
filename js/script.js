@@ -35,29 +35,108 @@ function exercicioQuatro(){
 }
 
 function retangulo(){
+    var base = prompt("adicione a base do retângulo: ");
+    var altura = prompt("adicione a altura do retângulo: ");
 
+    if(!isNaN(parseFloat(base)) && !isNaN(parseFloat(altura)))
+        {
+            var retangulo = base * altura;
+            alert("a área do retângulo é: " + retangulo);
+        }
+    else
+    alert("a altura e base precisam ser numeros");
+    
 }
 
 function quadradro(){
-    
+    var lado = prompt("adicione um dos lados do quadrado")
+    if(!isNaN(parseFloat(lado)))
+        {
+            var quadrado = lado * lado;
+            alert("a área do quadrado é: " + quadrado);
+        }
+    else
+    alert("a área precisa ser numero");
 }
 
 function losango(){
+    var diagonalMaior = prompt("adicione o valor da maior diagonal: ");
+    var diagonalMenor = prompt("adicione o valor da menor diagonal: ");
+
+    if(!isNaN(parseFloat(diagonalMaior)) && !isNaN(parseFloat(diagonalMenor)))
+        {
+            if(diagonalMaior > diagonalMenor)
+            {
+                var losango = diagonalMaior * diagonalMenor/2;
+                alert("a área do losango é: " + losango);
+            }else{
+                alert("as diagonais foram colocadas erradas.");
+                reiniciar();
+            }
+        }else
+            alert("as diagonais precisam ser numeros");
+}
+
+function reiniciar(){
+    losango();
+}
+function trapezio(){
+    var baseMaior = prompt("adicione o valor da maior base do trapézio: ");
+    var baseMenor = prompt("adicione o valor da menor base do trapézio: ");
+    var altura = prompt("adicione o valor da altura do trapézio: ");
+
+    if(!isNaN(parseFloat(baseMaior)) && !isNaN(parseFloat(baseMenor)) && !NaN(parseFloat(altura)))
+        {
+            if(baseMaior > baseMenor)
+            {
+                var trapezio = (baseMaior + baseMenor)*altura / 2;
+                alert("a área do trapézio é: " + trapezio);
+            }else{
+                alert("as bases foram colocadas em ordem errada.");
+                reiniciarT();
+            }
+        }else
+            alert("as bases e a altura precisam ser numeros.");
     
 }
 
-function trapezio(){
-    
+function reiniciarT(){
+    trapezio();
 }
 
 function paralelograma(){
+    var base = prompt("adicione a base do retângulo: ");
+    var altura = prompt("adicione a altura do retângulo: ");
+
+    if(!isNaN(parseFloat(base)) && !isNaN(parseFloat(altura)))
+        {
+            var paralelograma = base * altura;
+            alert("a área do paralelograma é: " + paralelograma);
+        }
+    else
+    alert("a altura e base precisam ser numeros");
     
 }
 
 function triangulo(){
+    var base = prompt("adicione a base do retângulo: ");
+    var altura = prompt("adicione a altura do retângulo: ");
+
+    if(!isNaN(parseFloat(base)) && !isNaN(parseFloat(altura)))
+        {
+            var triangulo = base * altura / 2;
+            alert("a área do triângulo é: " + triangulo);
+        }
+    else
+    alert("a altura e base precisam ser numeros");
     
 }
 
 function círculo(){
-    
+    var raio = prompt("adicione o  raio do circulo: ")
+    if(!isNaN(parseFloat(raio))){
+        circulo = Math.PI * (raio * raio);
+        alert("a área do circulo é: ");
+    }else
+        alert("o raio Precisa ser numero!");
 }
