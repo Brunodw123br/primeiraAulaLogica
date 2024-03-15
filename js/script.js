@@ -132,11 +132,14 @@ function triangulo(){
     
 }
 
-function círculo(){
+function circulo(){
     var raio = prompt("adicione o  raio do circulo: ")
     if(!isNaN(parseFloat(raio))){
-        circulo = Math.PI * (raio * raio);
-        alert("a área do circulo é: ");
+        // var circulo = Math.PI * (raio * raio);
+        var pi = 3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229485493038196442881097566593344612847564823378678316527120190914564856692346034861045432664;
+
+        var circulo = raio*raio*pi
+        alert("a área do circulo é: " + circulo);
     }else
         alert("o raio Precisa ser numero!");
 }
