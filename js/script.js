@@ -80,12 +80,12 @@ function losango(){
 function reiniciar(){
     losango();
 }
+
 function trapezio(){
     var baseMaior = prompt("adicione o valor da maior base do trapézio: ");
     var baseMenor = prompt("adicione o valor da menor base do trapézio: ");
     var altura = prompt("adicione o valor da altura do trapézio: ");
-
-    if(!isNaN(parseFloat(baseMaior)) && !isNaN(parseFloat(baseMenor)) && !NaN(parseFloat(altura)))
+    if(!isNaN(parseFloat(baseMaior)) && !isNaN(parseFloat(baseMenor)) && !isNaN(parseFloat(altura)))
         {
             if(baseMaior > baseMenor)
             {
